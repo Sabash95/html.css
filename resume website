@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> saba shahyadi - medical doctor</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="../logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+</head>
+<body class="grid">
+    <div class="parent container">
+        <div class="profile__perfil flex">
+            <img src="./image/پروفایل.jpg" alt="">
+        </div>
+        <div class="profile-name flex_resume">
+            <h1>SABA SHAHYADI</h1>
+            <hr>
+            <h2>MEDICAL DOCTOR</h2>
+        </div>
+        <div class="contact_me flex_resume">
+            <h4>CONTACT ME</h4>
+            <div class="flex address">
+                <i class="bi bi-house-door-fill"></i>
+                <p>
+                    office address : tabriz,Emam reza hospital
+                </p>
+            </div>
+            <div class="flex email">
+                <i class="bi bi-envelope-fill"></i>
+                <a href="mailto:">saba.sh7495@gmail.com</a>
+            </div>
+            <div class="flex website">
+                <i class="bi bi-laptop-fill"></i>
+                <a href="">www.sabash749.com</a>
+            </div>
+            <div class="flex linkedin">
+                <i class="bi bi-linkedin"></i>
+                <a href="">@sabash7495</a>
+            </div>
+            <div class="flex phone">
+                <i class="bi bi-phone"></i>
+                <a href="">0302012562</a>
+            </div>
+        </div>
+        <div class="skills flex_resume">
+            <h4>overview of skills</h4>
+            <br>
+            <div class="flex">
+                <div class="skills_scale">5/5</div>
+                <p>communication</p>
+            </div>
+            <div class="flex">
+                <div class="skills_scale">3/5</div>
+                <p>attitude</p>
+            </div>
+            <div class="flex">
+                <div class="skills_scale">2/5</div>
+                <p>flexibility</p>
+            </div>
+            <div class="flex">
+                <div class="skills_scale">4/5</div>
+                <p>participation in projects</p>
+            </div>
+            <div class="flex">
+                <div class="skills_scale">5/5</div>
+                <p>clinical quality of care</p>
+            </div>
+            <div class="flex">
+                <div class="skills_scale">4/5</div>
+                <p>patient satisfaction</p>
+            </div>
+        </div>
+        <div class="prizes flex_resume">
+            <h4>PRIZES AND AWARDS</h4>
+            <br>
+            <div class="flex">
+                <i class="bi bi-award-fill"></i>
+                <p>
+                    best intern of the year(2020)
+                </p>
+            </div>
+            <div class="flex">
+                <i class="bi bi-award-fill"></i>
+                <p>
+                    part of estedad derakhshan community
+                </p>
+            </div>
+            <div class="flex">
+                <i class="bi bi-award-fill"></i>
+                <p>
+                    1% of rating
+                </p>
+            </div>
+        </div>
+         <div class="profile">
+            <div class="gap">
+                <h3>about me </h3><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, corrupti fuga. Reiciendis eos, soluta explicabo nemo tempore consequatur odio fugit. Adipisci consequatur necessitatibus nihil perspiciatis iure illo accusantium aliquid odio!</p>
+            </div> 
+
+            <div class="gap">
+                <h3>experience </h3><br>
+                <div class="gap-child">
+                    <span>saba design studio </span>
+                    <p class="date">jurnal digital marketing 2020</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus saepe culpa voluptate nulla, debitis cum. Numquam, beatae est? Animi fugiat consequuntur obcaecati. Voluptatibus vero deserunt quos harum reiciendis cumque omnis?</p>
+                </div>
+                <div class="gap-child">
+                    <span>saba design studio </span>
+                    <p class="date">jurnal digital marketing 2022</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus saepe culpa voluptate nulla, debitis cum. Numquam, beatae est? ?</p>
+                </div>
+            </div>  
+            <div class="gap">
+                <h3>education</h3><br>
+                <div class="gap-child">
+                    <span>maria school </span>
+                    <p class="date">jurnal medical marketing 2017-2018</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus saepe culpa voluptate nulla, debitis cum. Numquam, beatae est? ?</p>
+                </div>
+                <div class="gap-child">
+                    <span>tabriz university </span>
+                    <p class="date">medical student 2014-2021</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus saepe culpa voluptate nulla, debitis cum. Numquam, beatae est? ?</p>
+                </div>
+            </div> 
+   </div>
+</body>
+</html>
+
+
+
+:root{
+    --back-color:#fff;
+    --back-color-left:#065c60;
+    --back-color-right:rgb(255,245,232);
+    --color:#ffa470;
+    --color-icon:#91dadd;
+    --light-color:#fff2ea;
+    --dark-color:#065c60;
+    --text-color-dark:#000;
+    --text-color-light:#fff;
+    --body-font:'poppins', sans-serif;
+    --h1-font-size:2rem;
+    --h2-font-size:1.25rem;
+    --h3-font-size:1rem;
+    --normal-font-size:0.938rem;
+    --small-font-size:0.813rem;
+    --smaller-font-size:0.75rem;
+}
+@media screen and(min-width:968px) {
+    :root{
+        --h2-font-size:1.5rem;
+        --h3-font-size:1025rem;
+        --normal-font-size:1rem;
+        --small-font-size:0.875rem;
+        --smaller-font-size:0.813rem;
+    }
+}
+@media screen and(max-width:690px) {
+    .container{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .parent{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: repeat(6 ,auto);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    .parent>div{
+        padding: 1.5rem;  
+    }
+    .profile__perfil{
+        grid-area: 1/1/2/2;
+        background-color: var(--back-color-right);
+    }
+    .profile-name{grid-area: 2/1/3/2;}
+    .contact_me{grid-area: 3/1/4/2;}
+    .skills{grid-area: 4/1/5/2;}
+    .prizes{grid-area:5/1/6/2 ;}
+    .profile{grid-area:6/1/7/2 ;}
+    .flex_resume{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap:0.2 rem;
+    }
+    .profile-name{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--back-color);
+    color: var(--text-color-dark);
+}
+h1{
+    color: var(--dark-color);
+}
+h2,h3,h4{
+    color: var(--color);
+    font-weight: 600;
+    letter-spacing: 0.3rem;
+}
+a{
+    text-decoration: none;
+    color: var(--back-color);
+    font-size:var(--smaller-font-size);
+}
+img{
+    max-width: 100%;
+}
+p{
+    font-size:var(--smaller-font-size);
+}
+i{
+    margin: 0.8rem;
+    color: var(--color-icon);
+}
+.container{
+    max-width: 968px;
+    margin: auto;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.parent{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(5 ,auto);
+}
+.parent>div{
+    padding: 1.5rem;
+}
+.profile__perfil{
+    grid-area: 1/1/2/2;
+    background-color: var(--back-color-left);
+}
+.profile-name{
+    grid-area: 1/2/2/3;
+    background-color:var(--back-color-right);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.contact_me{
+    grid-area: 2/1/3/2;
+    background-color: var(--back-color-left);
+    color:var(--text-color-light);
+}
+.skills{
+    grid-area: 3/1/4/2;
+    background-color: var(--back-color-left);
+    color:var(--text-color-light);
+}
+.prizes{
+    grid-area:4/1/5/2;
+    background-color: var(--back-color-left);
+    color:var(--text-color-light);
+}
+.profile{
+    grid-area: 2/2/5/3;
+    background-color:var(--back-color-right);
+}
+.flex_resume{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap:0.5 rem;
+}
+img{
+   width: 120px;
+   height: 120px;
+   border: 2px solid var(--color);
+   border-radius: 100%;
+}
+hr{
+    width: 20vw;
+    border-top: 1.2px dashed var(--dark-color);
+}
+.skills_scale{
+    margin: 0.5rem;
+    color: var(--color-icon);
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content:space-between;
+}
+.profile>div{
+    margin: 0.5rem;
+    line-height: 1.5rem;
+}
+.gap{
+    margin: 0.5rem auto 1rem auto;
+}
+.gap-child{
+    margin: 0.3rem auto 0.3rem auto; 
+} 
+.date{
+    color: rgb(173,173,173);
+}
+.gap span{
+    font-size: 18px;
+    font-style: italic;
+}
