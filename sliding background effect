@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+</head>
+<body>
+  <div class="main_bg"> </div>
+  <div class="main_bg layer1"> </div>
+  <div class="main_bg layer2"></div>
+</body>
+</html>
+
+.main_bg{
+    background-image: linear-gradient(56deg, #9bff9d 50% ,#0199ff 50%);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -25%;
+    right:-25%;
+    opacity: 0.5;
+    z-index:-1;
+    animation: slide 3s ease-in-out infinite alternate;
+}
+.layer1{
+    animation-duration: 4s;
+    animation-direction:alternate;
+}
+.layer2{
+    animation-duration: 5s;
+  
+}
+@keyframes slide {
+    0%{
+        transform: translateX(-0%);
+    }
+    100%{
+        transform: translateX(50%);
+    }
+}
