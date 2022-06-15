@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="main">
+        <div class="circle"></div>
+    </div>
+</body>  
+</html>
+
+
+
+*{
+    margin:0;
+    padding:0;
+   
+  }
+ .main{
+    margin:0;
+    width: 400px;
+    height: 300px; 
+    background-color:#191919 ;
+}
+  .circle{
+    width: 400px;
+    height: 300px;
+    background-color:#191919;
+    clip-path: polygon(0% 0%,67.5% 0%,0% 90%);
+    background-image:
+    radial-gradient(#F6E59C 50% , transparent 50%);
+    background-repeat: repeat;
+    background-size: 60px 60px,cover,cover;
+    margin:10
+}
