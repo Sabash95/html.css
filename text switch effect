@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="word">just</div>
+            <div class="word">do</div>
+            <div class="word">it ....nooow</div>
+    </div>
+</body>
+</html>
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+
+.container{
+    position: relative;
+    color: aliceblue;
+    font-size: 56px;
+    filter: contrast(15%);
+    width: 100vw;
+    height: 100vh;
+
+}
+.word{
+  position: absolute;
+  top: 40%;
+  left: 40%; 
+  animation: switch 5s infinite ease-in-out;
+  margin: auto;
+}
+.word:nth-child(1){
+    animation-delay:-4s;
+}
+.word:nth-child(2){
+    animation-delay:-2.5s ;
+}
+.word:nth-child(3){
+    animation-delay:-1s ;
+}
+@keyframes switch{
+    0%,5%,100%{
+        filter: blur(0px);
+        opacity: 1;
+    }
+    50%,80%{
+        filter: blur(180px);
+        opacity: 0;
+    }
+}
