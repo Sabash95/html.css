@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+</head>
+<body >
+ <div class="container">
+  <h4>A message you would like to pass</h4>
+  <form id="message-form">
+    <input type="text" name="" id="message" class="box">
+    <input type="submit" name="" id="submitbtn" class="buttom">
+  </form>
+  <h5 class="feedback">please enter a value to pass </h5>
+  <h4>last message delivered!</h4>
+  <h4 class="message-comtent">hello world</h4>
+
+ </div>
+<script src="./js/script.js"></script>
+</body>
+</html>
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family:'Times New Roman', Times, serif;
+}
+body,html{
+background-color: #6665ee;
+display:grid ;
+height: 100%;
+place-items: center;
+}
+h4{
+	font-size: 1.5rem;
+	margin-bottom: 0.5rem;
+	font-family: inherit;
+	font-weight: 500;
+	line-height: 1.2;
+	text-transform: capitalize;
+
+}
+.container{
+	width: 600px;
+	background-color: #fff;
+	padding: 25px 30px;
+	border-radius: 10px;
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+}
+form input{
+	margin: 10px 0;
+	outline: none;
+	border: 1px solid #6665ee;
+}
+form input.box{
+width: 500px;
+height: 40px;
+font-size: 1.2rem;
+padding: 0 10px;
+}
+form input.buttom{
+	font-size: 1rem;
+	padding: 12px 20px;
+	background-color: #6665ee;
+	color: #fff;
+	font-weight: 500;
+	cursor: pointer;
+}
+h5{
+	background-color: #ffd4cd;
+	width: 100%;
+	font-size: 1.2rem;
+	padding: 10px 0;
+}
+.feedback{
+	display: none;
+}
+.show{
+	display: block;
+}
+.message-comtent{
+	color: #4b8;
+}
+
+
+(function(){
+    const form = document.querySelector("#message-form");
+    form.addEventListener('submit',function(e){
+        e.preventDefault();
+
+        const message = document.querySelector('#message')
+        const feedback = document.querySelector('.feedback')
+        const messageContent = document.querySelector('.message-comtent')
+
+        if(message.value === ''){
+            feedback.classList.add('show')
+            setTimeout(function(){
+                feedback.classList.remove('show')
+            },4000)
+        }else{
+            messageContent.textContent = message.value;
+            message.value = ''
+        }
+    })
+
+})()
