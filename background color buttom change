@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+</head>
+<body >
+ <button>click me</button>
+<script src="./js/script.js"></script>
+</body>
+</html>
+
+button{
+	cursor: pointer;
+	color: antiquewhite;
+	background-color: cadetblue;
+	border: none;
+	padding: 5px;
+	font-size: 1.5rem;
+	border-radius: 5px;
+}
+body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+const buttom = document.querySelector("button");
+const body = document.querySelector("body");
+const color = ["red",'purple','navy','grey']
+
+body.style.backgroundColor = "violet";
+
+buttom.addEventListener('click',changeB);
+function changeB(){
+    const colorIndex = parseInt(Math.random()*color.length);
+    body.style.backgroundColor = color[colorIndex];
+}
