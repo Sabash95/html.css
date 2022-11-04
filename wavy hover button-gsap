@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/81c2c05f29.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">   
+</head>
+<body >
+    <svg class="btn" viewBox="0 0 200 60" fill="#ccc" stroke="none">
+        <path class="p" d="M0,50 L0,0 L200,0 L200,50z" />
+        <text x="41" y="34" fill="#000">HOVER ME</text>
+      </svg>
+<script src="./js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js">
+</script>
+</body>
+</html>
+ 
+  
+
+body,html{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-size: 22px;
+}
+svg{
+    cursor: pointer;
+    position: relative;
+    width: 200px;
+    height: 60px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-100px,-30px);
+}
+
+amp = 0;
+speed = 4;
+
+function setPath(a,b,c){ 
+  var str = "M0,50 L0,0 L200,0 L200,50 ";
+  for (var i=0; i<50; i++){
+    str+= 'l-4,'+ String( Math.sin(a*speed)*gsap.utils.wrapYoyo(15.9,5,i)*amp );
+  }  
+  gsap.set('.p', {attr:{d:str}});
+}
+
+function endWave(){
+  gsap.ticker.remove(setPath);
+  gsap.set('.p', {attr:{d:'M0,50 L0,0 L200,0 L200,50z'}});
+}
+
+const btn = document.querySelector('.btn')
+
+btn.addEventListener('mouseenter', function(){
+  gsap.to(window, {duration:gsap.utils.random(0.7, 1), speed:3, amp:0.4, ease:'power4', yoyoEase:'sine.inOut', onStart:function(){ gsap.ticker.add(setPath); }, onComplete:endWave, yoyo:true, repeat:1, overwrite:true});
+})
+
+btn.addEventListener('mouseleave', function(){
+  gsap.to(window, {duration:0.6, amp:0, speed:4, onComplete:endWave, overwrite:true});
+})
+
